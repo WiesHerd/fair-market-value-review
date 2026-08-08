@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 1408" width="1100" height="1408"
+     font-family="Segoe UI, Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#8093AB"/>
+    </marker>
+  </defs>
+  <rect width="1100" height="1408" fill="#FFFFFF"/>
+
+  <text x="550" y="46" font-size="14.5" font-weight="700" fill="#C98A2E" text-anchor="middle" letter-spacing="2.6">FREE AI SKILL · NO LOGIN · NO VENDOR</text>
+  <text x="550" y="90" font-size="31" font-weight="700" fill="#1F3A5F" text-anchor="middle">Fair Market Value Reviews for Provider Compensation</text>
+  <text x="550" y="120" font-size="16" fill="#63696F" text-anchor="middle">New-hire ranges and salary adjustments — from request to committee packet in minutes.</text>
+  <text x="550" y="146" font-size="14.5" font-style="italic" fill="#8093AB" text-anchor="middle">You answer. It calculates. You approve before anything is created.</text>
+
+  <g transform="translate(0,66)">
+
+  <!-- 1 start -->
+  <rect x="410" y="112" width="280" height="58" rx="29" fill="#1F3A5F"/>
+  <text x="550" y="140" font-size="17" font-weight="700" fill="#FFFFFF" text-anchor="middle">You type “fmv”</text>
+  <text x="550" y="159" font-size="12.5" fill="#A9BDD4" text-anchor="middle">in your AI assistant</text>
+  <line x1="550" y1="170" x2="550" y2="196" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 2 decision -->
+  <polygon points="550,200 810,262 550,324 290,262" fill="#EEF2F7" stroke="#1F3A5F" stroke-width="2"/>
+  <text x="550" y="257" font-size="16" font-weight="700" fill="#1F3A5F" text-anchor="middle">What kind of review?</text>
+  <text x="550" y="278" font-size="12.5" fill="#63696F" text-anchor="middle">it asks you first</text>
+
+  <line x1="290" y1="262" x2="196" y2="262" stroke="#8093AB" stroke-width="2"/>
+  <line x1="196" y1="262" x2="196" y2="330" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="810" y1="262" x2="904" y2="262" stroke="#8093AB" stroke-width="2"/>
+  <line x1="904" y1="262" x2="904" y2="330" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="550" y1="324" x2="550" y2="330" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <rect x="86" y="334" width="220" height="64" rx="8" fill="#FFFFFF" stroke="#2E6B4F" stroke-width="2"/>
+  <text x="196" y="360" font-size="15.5" font-weight="700" fill="#2E6B4F" text-anchor="middle">New hire</text>
+  <text x="196" y="381" font-size="12.5" fill="#63696F" text-anchor="middle">what range do we offer?</text>
+
+  <rect x="440" y="334" width="220" height="64" rx="8" fill="#FFFFFF" stroke="#1F3A5F" stroke-width="2"/>
+  <text x="550" y="360" font-size="15.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Salary adjustment</text>
+  <text x="550" y="381" font-size="12.5" fill="#63696F" text-anchor="middle">existing provider</text>
+
+  <rect x="794" y="334" width="220" height="64" rx="8" fill="#FFFFFF" stroke="#8B3A3A" stroke-width="2"/>
+  <text x="904" y="360" font-size="15.5" font-weight="700" fill="#8B3A3A" text-anchor="middle">Quick benchmark</text>
+  <text x="904" y="381" font-size="12.5" fill="#63696F" text-anchor="middle">where do they sit?</text>
+
+  <line x1="196" y1="398" x2="196" y2="428" stroke="#8093AB" stroke-width="2"/>
+  <line x1="904" y1="398" x2="904" y2="428" stroke="#8093AB" stroke-width="2"/>
+  <line x1="550" y1="398" x2="550" y2="428" stroke="#8093AB" stroke-width="2"/>
+  <line x1="196" y1="428" x2="904" y2="428" stroke="#8093AB" stroke-width="2"/>
+  <line x1="550" y1="428" x2="550" y2="456" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 3 questions -->
+  <rect x="200" y="460" width="700" height="228" rx="12" fill="#F7F9FC" stroke="#C9D6E4" stroke-width="2"/>
+  <text x="550" y="490" font-size="16" font-weight="700" fill="#1F3A5F" text-anchor="middle">It asks you, one question at a time</text>
+  <text x="550" y="511" font-size="12.5" fill="#63696F" text-anchor="middle">answer in the chat, or just hand it a file</text>
+
+  <g>
+    <circle cx="252" cy="546" r="15" fill="#1F3A5F"/>
+    <text x="252" y="551" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">1</text>
+    <text x="280" y="551" font-size="15" font-weight="600" fill="#23262B">Your survey data</text>
+    <text x="452" y="551" font-size="13" fill="#63696F">— file, paste, or the four numbers</text>
+    <circle cx="252" cy="586" r="15" fill="#1F3A5F"/>
+    <text x="252" y="591" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">2</text>
+    <text x="280" y="591" font-size="15" font-weight="600" fill="#23262B">The provider</text>
+    <text x="452" y="591" font-size="13" fill="#63696F">— specialty, experience, FTE</text>
+    <circle cx="252" cy="626" r="15" fill="#1F3A5F"/>
+    <text x="252" y="631" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">3</text>
+    <text x="280" y="631" font-size="15" font-weight="600" fill="#23262B">Their pay</text>
+    <text x="452" y="631" font-size="13" fill="#63696F">— base, stipends, incentives</text>
+    <circle cx="252" cy="666" r="15" fill="#1F3A5F"/>
+    <text x="252" y="671" font-size="13" font-weight="700" fill="#FFFFFF" text-anchor="middle">4</text>
+    <text x="280" y="671" font-size="15" font-weight="600" fill="#23262B">Their production</text>
+    <text x="452" y="671" font-size="13" fill="#63696F">— total annual wRVUs</text>
+  </g>
+
+  <line x1="550" y1="688" x2="550" y2="716" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 4 it calculates -->
+  <rect x="240" y="720" width="620" height="112" rx="12" fill="#FDF7F7" stroke="#8B3A3A" stroke-width="2"/>
+  <text x="550" y="750" font-size="16" font-weight="700" fill="#8B3A3A" text-anchor="middle">It does the analysis</text>
+  <text x="550" y="776" font-size="13.5" fill="#63696F" text-anchor="middle">Blends your surveys by sample size · finds the percentiles</text>
+  <text x="550" y="798" font-size="13.5" fill="#63696F" text-anchor="middle">and checks whether the pay lines up with the production</text>
+  <text x="550" y="820" font-size="13" font-style="italic" fill="#8B3A3A" text-anchor="middle">⚑ if it doesn’t, it tells you — and why that matters</text>
+  <line x1="550" y1="832" x2="550" y2="860" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 5 approval gate -->
+  <polygon points="550,864 830,930 550,996 270,930" fill="#FFF8EC" stroke="#C98A2E" stroke-width="2.5"/>
+  <text x="550" y="920" font-size="16.5" font-weight="700" fill="#8A5D14" text-anchor="middle">“Here’s my math. Look right?”</text>
+  <text x="550" y="943" font-size="13" fill="#8A5D14" text-anchor="middle">nothing is created until you say yes</text>
+
+  <text x="856" y="924" font-size="13" font-weight="700" fill="#63696F">no →</text>
+  <path d="M830,930 L900,930 L900,600 L550,600" fill="none" stroke="#8093AB" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#a)"/>
+  <rect x="836" y="742" width="128" height="42" rx="6" fill="#FFFFFF" stroke="#C9D6E4"/>
+  <text x="900" y="762" font-size="12" fill="#63696F" text-anchor="middle">fix it and</text>
+  <text x="900" y="777" font-size="12" fill="#63696F" text-anchor="middle">re-check</text>
+
+  <text x="566" y="1020" font-size="13" font-weight="700" fill="#2E6B4F">yes</text>
+  <line x1="550" y1="996" x2="550" y2="1032" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+
+  <!-- 6 outputs -->
+  <rect x="86" y="1036" width="928" height="150" rx="12" fill="#F5FAF7" stroke="#B4D4C2" stroke-width="2"/>
+  <text x="550" y="1066" font-size="16" font-weight="700" fill="#2E6B4F" text-anchor="middle">You get the finished set</text>
+
+  <rect x="112" y="1082" width="208" height="82" rx="8" fill="#FFFFFF" stroke="#2E6B4F"/>
+  <text x="216" y="1114" font-size="14.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Filled workbook</text>
+  <text x="216" y="1136" font-size="12" fill="#63696F" text-anchor="middle">your own template,</text>
+  <text x="216" y="1152" font-size="12" fill="#63696F" text-anchor="middle">formulas intact</text>
+
+  <rect x="340" y="1082" width="208" height="82" rx="8" fill="#FFFFFF" stroke="#2E6B4F"/>
+  <text x="444" y="1114" font-size="14.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Committee packet</text>
+  <text x="444" y="1136" font-size="12" fill="#63696F" text-anchor="middle">Word + PDF,</text>
+  <text x="444" y="1152" font-size="12" fill="#63696F" text-anchor="middle">with the chart</text>
+
+  <rect x="568" y="1082" width="208" height="82" rx="8" fill="#FFFFFF" stroke="#2E6B4F"/>
+  <text x="672" y="1114" font-size="14.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Email summary</text>
+  <text x="672" y="1136" font-size="12" fill="#63696F" text-anchor="middle">ready to forward</text>
+  <text x="672" y="1152" font-size="12" fill="#63696F" text-anchor="middle">to leadership</text>
+
+  <rect x="796" y="1082" width="192" height="82" rx="8" fill="#FFFFFF" stroke="#1F3A5F"/>
+  <text x="892" y="1114" font-size="14.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Logged</text>
+  <text x="892" y="1136" font-size="12" fill="#63696F" text-anchor="middle">tracked in your</text>
+  <text x="892" y="1152" font-size="12" fill="#63696F" text-anchor="middle">request register</text>
+
+  <line x1="550" y1="1186" x2="550" y2="1212" stroke="#8093AB" stroke-width="2" marker-end="url(#a)"/>
+  <rect x="290" y="1216" width="520" height="52" rx="26" fill="#EEF2F7" stroke="#C9D6E4"/>
+  <text x="550" y="1240" font-size="14.5" font-weight="700" fill="#1F3A5F" text-anchor="middle">Next request starts at “which provider?”</text>
+  <text x="550" y="1258" font-size="12" fill="#63696F" text-anchor="middle">it already knows your file layout</text>
+
+  </g>
+
+  <text x="550" y="1358" font-size="13" fill="#8093AB" text-anchor="middle">Your survey data never leaves your machine  ·  Market analysis, not a certified FMV opinion</text>
+  <text x="550" y="1386" font-size="14" font-weight="700" fill="#1F3A5F" text-anchor="middle">github.com/WiesHerd/fair-market-value-review</text>
+</svg>

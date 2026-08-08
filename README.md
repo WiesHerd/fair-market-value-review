@@ -1,10 +1,14 @@
 # Fair Market Value Review
 
-![CI](https://github.com/WiesHerd/comp-adjustment-request/actions/workflows/ci.yml/badge.svg)
+![Tests](https://img.shields.io/badge/tests-129%20passing-brightgreen.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Python](https://img.shields.io/badge/python-3.11+-blue.svg)
 
-An AI agent skill for building empirical physician/APP fair market value review reports — committee Excel template fills, DOCX/PDF report generation, benchmark blending, and market-band exhibits.
+**A guided AI skill for provider compensation teams.** New-hire ranges and salary
+adjustments — from request to committee packet in minutes. You answer, it calculates,
+and you approve before anything is created.
+
+![How a Fair Market Value Review works](docs/fmv-flowchart.svg)
 
 ## How It Works
 
