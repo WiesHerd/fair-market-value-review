@@ -1,0 +1,8 @@
+openpyxl>=3.1
+python-docx>=1.0
+matplotlib>=3.7
+pytest>=7.0
+# Optional -- PDF export for the HTML email report (build_html_email.py):
+#   pip install weasyprint
+# (needs system pango/cairo libs; the HTML file itself generates without it.
+#  DOCX->PDF export uses LibreOffice (soffice) and needs no pip package.)

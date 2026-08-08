@@ -1,0 +1,17 @@
+{
+  "name": "Pediatric Critical Care Faculty",
+  "providers_file": "examples/example_cohort.tsv",
+  "market_anchors_file": "examples/example_anchors.json",
+  "output": "examples/example_report.docx",
+  "no_pdf": true,
+  "benefits_rate": 0.048,
+  "rationale": [
+    "Internal equity: proposed salaries maintain YOE-based progression without inversions.",
+    "External anchoring: proposed bases position providers within the p25-p75 market band.",
+    "Retention: targeted adjustment addresses compression risk for this cohort."
+  ],
+  "governance_notes": [
+    "Proposed salaries do not create senior-junior inversions.",
+    "Benchmark source: blended weighted-average of aggregated survey data (weighted by sample size)."
+  ]
+}

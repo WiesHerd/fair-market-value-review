@@ -1,0 +1,23 @@
+{
+  "name": "Provider 1",
+  "salary_file": "annual_salary_increases.xlsx",
+  "survey_file": "survey_combined.xlsx",
+  "template": "committee_template.xlsx",
+  "proposed_base": 325000.00,
+  "stipend": 42000,
+  "current_stipend": 0,
+  "wrvu": 4228,
+  "track_num": 100026,
+  "submit_date": null,
+  "request_type": "Existing",
+  "no_academic_rank": true,
+  "academic_rank": null,
+  "cart_clinical": 1.0,
+  "cart_admin": 0,
+  "cart_research": 0,
+  "cart_teaching": 0,
+  "request_summary": "Market adjustment to address compression and align with blended p50 for specialty cohort.",
+  "general_background": "Blended benchmark = weighted average of Survey 1 (n=89), Survey 3 (n=142), Survey 2 (n=34). Proposed base positions at approximately p48 of blended TCC distribution.",
+  "physician_background": "8 years post-fellowship. Full-time clinical. wRVU production at 4,228.",
+  "output": "committee_request_form.xlsx"
+}
