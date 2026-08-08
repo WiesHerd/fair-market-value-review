@@ -37,7 +37,7 @@ Each specialty row contains 5 columns per source per metric:
 Salary files often use ASCII hyphen `-` (e.g., "Pediatrics - Gynecology") while
 survey files may use Unicode en-dash `–` (U+2013) (e.g., "Pediatrics – Gynecology").
 
-**Fix:** Normalize via `unicodedata.normalize('NFKD')` + ASCII encoding before comparison. Note: NFKD does *not* turn an en-dash into a hyphen — it strips it entirely (leaving a double space), so a direct `norm(a) == norm(b)` check still fails across dash variants. The actual fix is the fuzzy split-and-substring match below, not normalization alone. (Confirmed via `tests/test_dash_normalization.py`.)
+**Fix:** Normalize via `unicodedata.normalize('NFKD')` + ASCII encoding before comparison. Note: NFKD does *not* turn an en-dash into a hyphen — it strips it entirely (leaving a double space), so a direct `norm(a) == norm(b)` check still fails across dash variants. The actual fix is the fuzzy split-and-substring match below, not normalization alone.
 
 ### Fuzzy Matching
 Exact match may fail due to:
@@ -82,6 +82,5 @@ Blended TCC (weighted by n):
   p90 = (410*142 + 420*89 + 405*34) / 265 = $412,717
 ```
 
-(Verified against actual openpyxl-fill + LibreOffice-recalc output — see
-`examples/` and `scripts/generate_example_xlsx_fixtures.py`. The previous version of this
-example had arithmetic errors in p25/p50/p90; only p75 was correct.)
+These figures match the values produced by `scripts/generate_example_xlsx_fixtures.py`
+and the workbook filler, checked with LibreOffice formula recalculation.

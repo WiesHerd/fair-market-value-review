@@ -5,7 +5,7 @@ This document describes the generic structure of a two-sheet committee compensat
 request Excel template. **Cell positions vary by organization** — use this as a guide,
 not gospel. Always verify against your actual template.
 
-## Sheet 1: "Template Request Form"
+## Sheet 1: "FMV Review"
 
 ### Header Section (rows 4-10)
 | Cell | Content | Notes |
@@ -81,11 +81,11 @@ Key columns:
 - I6: YOE
 - K6: FTE
 - Q6-S6: Current comp (base, stipend, prod incentive)
-- V6: `='Template Request Form'!B16` (TCC percentile — cross-sheet ref)
-- X6: `='Template Request Form'!F16` (wRVU percentile — cross-sheet ref)
+- V6: `='FMV Review'!B20` (TCC percentile — cross-sheet ref)
+- X6: `='FMV Review'!E21` (wRVU percentile — cross-sheet ref)
 - AA6-AC6: Proposed comp
 - AK6-AO6: % change formulas (IFERROR-wrapped)
-- AP6: `='Template Request Form'!C26` (projected percentile)
+- AP6: `='FMV Review'!C26` (projected percentile)
 - AR6-BC6: Cross-sheet refs to blended benchmark rows (34 and 40)
 
 ## Interpolated Percentile Formulas

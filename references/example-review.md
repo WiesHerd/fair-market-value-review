@@ -72,6 +72,3 @@ The exhibit shows a horizontal bar chart with:
 - p50 line (vertical)
 - p90 triangle marker
 - Current (circle), Planned (square), Proposed (diamond) markers per provider
-
-## Verification Note
-This worked example was checked against the actual generator scripts (`scripts/committee_template_generator.py`, `scripts/build_adjustment_report.py`) using synthetic files, with formulas recalculated via LibreOffice headless (openpyxl alone can't evaluate formulas). The blended TCC and percentile figures above are the corrected values — the original draft had arithmetic errors (p25/p50/p90 blends were wrong, and the p48/'below median' framing was backwards for the stated numbers).

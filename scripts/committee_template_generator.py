@@ -28,7 +28,7 @@ Auto-looks up TCC/wRVU benchmarks from the Survey Combined file by specialty.
 Handles .dec (portal-encrypted) files transparently.
 
 NOTE: This script assumes a two-sheet committee template with:
-  - Sheet 1: "Template Request Form" (data entry + benchmarks)
+  - Sheet 1: "FMV Review" (review snapshot, market data, compensation analysis)
   - Sheet 2: "Tracker" (request log)
 
 If your organization uses different sheet names or layouts, update the
@@ -339,7 +339,7 @@ def fill_template(template_path, output_path, data,
     ws1 = wb[sheet1_name]
     ws2 = wb[sheet2_name]
 
-    # ── Sheet 1: Template Request Form ──
+    # ── Sheet 1: FMV Review ──
 
     # ── Subheader: provider + subspecialty sit under the title ──
     ws1['A2'] = f"{data['physician_name']}  \u00b7  {data['specialty']}"
@@ -441,7 +441,7 @@ def fill_template(template_path, output_path, data,
     # Projected percentile — cross-sheet ref
     ws2['AP6'] = f"='{sheet1_name}'!E20"
 
-    # Blended benchmarks — cross-sheet references to Template Request Form rows 34 + 40
+    # Blended benchmarks: cross-sheet references to the FMV Review survey rows
     for tracker_col, form_col in [('AR', 'B'), ('AS', 'C'), ('AT', 'D'), ('AU', 'E'), ('AV', 'F'), ('AW', 'G')]:
         ws2[tracker_col + '6'] = f"='{sheet1_name}'!{form_col}10"
     for tracker_col, form_col in [('AX', 'B'), ('AY', 'C'), ('AZ', 'D'), ('BA', 'E'), ('BB', 'F'), ('BC', 'G')]:

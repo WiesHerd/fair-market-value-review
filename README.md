@@ -17,24 +17,24 @@ and you approve before anything is created.
 The agent runs a **guided intake** (one question at a time, file or typed answer at every
 step), performs the **market-approach analysis** (sample-size-weighted blending, percentile
 positioning, and the compensation-to-productivity alignment check), and produces
-**committee-ready deliverables** — each logged to a session audit trail and a request
+**committee-ready deliverables**: each logged to a session audit trail and a request
 register. Nothing is generated until the blended math has been shown and approved.
 
 ## What The Output Looks Like
 
-**FMV Review workbook** — provider and subspecialty in the subheader, blended Survey row per measure, one Current/Proposed/Δ comparison grid:
+**FMV Review workbook**: provider and subspecialty in the subheader, blended Survey row per measure, one Current/Proposed/Δ comparison grid:
 
 ![FMV Review sheet](docs/screenshots/fmv_review_sheet.ecd9617b.png)
 
-**Review packet (DOCX/PDF)** — KPI cards, market-position callout, cohort totals:
+**Review packet (DOCX/PDF)**: KPI cards, market-position callout, cohort totals:
 
 ![DOCX packet](docs/screenshots/fmv_docx_packet.d312153f.png)
 
-**Email-ready HTML** — self-contained, embedded exhibit, 0.6" PDF export:
+**Email-ready HTML**: self-contained, embedded exhibit, 0.6" PDF export:
 
 ![HTML email](docs/screenshots/fmv_html_email.9b587c9d.png)
 
-**New-hire market range** — recommended band with a red-flagged internal-equity caveat:
+**New-hire market range**: recommended band with a red-flagged internal-equity caveat:
 
 ![New hire range](docs/screenshots/fmv_new_hire_range.4170d56d.png)
 
@@ -50,24 +50,37 @@ carry a content hash so an updated image always gets a fresh URL.
 
 ## What It Does
 
-This skill helps a healthcare compensation analyst generate three types of deliverables:
+Four deliverables, from the same guided intake:
 
-1. **Committee Excel Template Fill** — auto-fills a two-sheet committee request form (Template Request Form + Tracker) with provider data, survey benchmarks, and interpolated percentile formulas. Surveys auto-looked up by specialty.
+1. **FMV Review workbook fill.** Fills your own two-sheet review workbook (FMV Review +
+   Tracker) with provider data, the blended survey row, and live percentile formulas.
+   Specialty benchmarks are looked up automatically. Every formula already in your
+   template is preserved, and the saved file is re-opened and verified.
 
-2. **Standard Adjustment Report (DOCX + PDF)** — consulting-style 8-section report with cohort tables, market-band exhibit chart, cost impact analysis, and empirical rationale.
+2. **Review packet (DOCX + PDF).** Eight sections: data sources, executive summary,
+   cohort detail, market-band exhibit, rationale, cost impact, governance notes,
+   footnotes.
 
-3. **CV-Only Market Anchor** — when you only have a candidate's CV (no offer, no internal equity), produces a market-anchored recommended range + exhibit.
+3. **New-hire market range.** When you have a candidate and no offer yet, produces a
+   market-anchored range and exhibit, flagged that internal equity has not been
+   considered.
 
-4. **Email-Ready HTML Report** — a single self-contained HTML file (inline CSS, exhibit embedded as base64) with KPI summary cards, suitable for pasting into an email to leadership; also exports a PDF with 0.6" page margins via WeasyPrint.
+4. **Email-ready HTML report.** One self-contained file with the exhibit embedded, so it
+   pastes into an email intact. Exports a PDF with 0.6" margins if WeasyPrint is installed.
 
 ## Key Features
 
-- **Multi-source benchmark blending** — weighted-average across Survey 1, Survey 2, and Survey 3 by n-count
-- **Percentile interpolation** — piecewise linear estimation between survey percentile points (labeled as directional)
-- **Dash normalization** — handles ASCII vs Unicode en-dash mismatch between salary files and survey files
-- **Formula preservation** — fills Excel templates while keeping all formulas (benefits, totals, blended benchmarks) intact
-- **Cross-sheet references** — Tracker auto-updates when Sheet 1 changes
-- **Encrypted file support** — handles `.dec` portal-encrypted Excel files transparently
+- **Blending by sample size.** Weighted across whichever survey sources carry data;
+  sources with suppressed data are excluded.
+- **Alignment check.** Compares compensation positioning against productivity
+  positioning and flags material gaps, since no percentile is inherently fair market value.
+- **Percentile interpolation**, labeled directional, because survey distributions are not
+  linear between published points.
+- **Formula preservation.** Your template's own benefits and total formulas are never
+  overwritten, only the inputs they read.
+- **Specialty matching** that handles the ASCII hyphen versus Unicode en-dash mismatch
+  between roster and survey exports.
+- **Encrypted file support** for `.dec` portal-encrypted workbooks.
 
 ## Installation
 
@@ -180,7 +193,7 @@ comp-adjustment-request/
     ├── committee-excel-template.md              # Cell mapping & formula reference
     ├── survey-combined-file-structure.md        # Survey file layout & dash pitfall
     ├── cv-only-market-anchor.md                 # CV-only workflow notes
-    └── example-adjustment-report.md              # Worked example with language patterns
+    └── example-review.md              # Worked example with language patterns
 ```
 
 ## Configuration
@@ -222,7 +235,7 @@ piecewise linear interpolation is used:
 - Between p50 and p75: `50 + (value - p50) / (p75 - p50) × 25`
 - Between p75 and p90: `75 + (value - p75) / (p90 - p75) × 15`
 
-This is labeled as **directional** — survey distributions are not linear between points.
+This is labeled as **directional**: survey distributions are not linear between points.
 
 ## Pitfalls (Documented in SKILL.md)
 

@@ -18,7 +18,7 @@ the session so the review is reproducible.
 
 ---
 
-## ⭐ START HERE — zero-state behavior (tutorial trigger)
+## Start here: zero-state behavior
 
 **If the user's first message is vague** — "fmv", "help", "how do I use this", "what does
 this do", "/fmv", or they clearly just installed the skill — **do not ask them a question
