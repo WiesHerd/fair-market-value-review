@@ -1,0 +1,23 @@
+{
+  "name": "Candidate A",
+  "specialty": "Pediatric Critical Care",
+  "yoe": 8,
+  "blended_tcc": {
+    "25": 281037.7358490566,
+    "50": 321037.7358490566,
+    "75": 366037.7358490566,
+    "90": 412716.9811320755
+  },
+  "recommended_range": {
+    "low": 281000,
+    "mid": 295000,
+    "high": 305000
+  },
+  "analysis_date": "2026-08-08T13:39:28.341593",
+  "sources": [
+    "Survey 1",
+    "Survey 2",
+    "Survey 3"
+  ],
+  "caveat": "CV-only assessment \u2014 no internal equity or cost impact analysis."
+}

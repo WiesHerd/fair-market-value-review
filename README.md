@@ -20,6 +20,13 @@ positioning, and the compensation-to-productivity alignment check), and produces
 **committee-ready deliverables**: each logged to a session audit trail and a request
 register. Nothing is generated until the blended math has been shown and approved.
 
+## See it before you install it
+
+Real generated files are committed in [`examples/sample_output/`](examples/sample_output/) —
+the filled workbook, the committee packet, the email report, and the new-hire range pack.
+Open the workbook and check the formula bar: the blended survey row and percentile
+callouts are live formulas, not pasted numbers.
+
 ## What The Output Looks Like
 
 **FMV Review workbook**: provider and subspecialty in the subheader, blended Survey row per measure, one Current/Proposed/Δ comparison grid:
@@ -244,6 +251,31 @@ This is labeled as **directional**: survey distributions are not linear between 
 - **Do not FTE-adjust** governance percentiles — part-time lower positioning is correct
 - **Benefits rate** varies by organization — read from template or ask
 - **Suppressed data:** `*`, `None`, `0` → treated as no data
+
+## What this does not do
+
+Being clear about the edges, because a compensation analysis that overstates itself is
+worse than none:
+
+- **This is a market-approach analysis, not a certified FMV opinion.** It positions
+  compensation against survey benchmarks. It does not perform the income or cost
+  approaches, and it does not evaluate commercial reasonableness, which is a separate
+  test — an arrangement can be at fair market value and still not be commercially
+  reasonable. Where regulatory reliance is required, an independent qualified valuation
+  professional should perform the determination.
+- **No survey data is included.** You bring your own licensed subscriptions. The bundled
+  files are synthetic and exist only so the commands run out of the box.
+- **Call pay, medical directorships, and other non-clinical arrangements are out of
+  scope.** They are valued differently, and stretching clinical benchmarks onto them
+  produces a wrong answer confidently.
+- **Blending does not adjust for survey overlap.** Providers who respond to more than one
+  survey are counted more than once. The blend is weighted by sample size and that
+  limitation is disclosed rather than hidden.
+- **Percentile positioning between published points is interpolated** and labeled
+  directional. Survey distributions are not linear between percentiles.
+- **It does not decide anything.** It shows the math, flags where compensation and
+  productivity diverge, and leaves the judgment — and the documentation of that judgment
+  — to you.
 
 ## License
 

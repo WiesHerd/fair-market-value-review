@@ -33,3 +33,7 @@ examples/example_report*
 examples/*_email.html
 anchor_out/
 committee_request.xlsx
+
+# Sample output is intentionally committed so the repo can be evaluated
+# without running anything
+!examples/sample_output/**
