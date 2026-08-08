@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 """
 Committee Template Generator — Physician/APP Compensation Request Form
-Automates filling of a committee Excel template with survey benchmarks.
+Automates filling of a FMV review workbook with survey benchmarks.
 
 USAGE:
-  python3 committee_template_generator.py --config request.json --output output.xlsx
+  python3 fmv_workbook_generator.py --config request.json --output output.xlsx
 
 OR with CLI args (survey file auto-lookup mode):
-  python3 committee_template_generator.py --name "Lastname, Firstname" \
+  python3 fmv_workbook_generator.py --name "Lastname, Firstname" \
     --salary-file annual_salary_increases.xlsx \
     --survey-file survey_combined.xlsx \
-    --template committee_template.xlsx \
+    --template fmv_template.xlsx \
     --proposed-base 319150.00 --stipend 42000 --wrvu 4228 \
     --no-academic-rank --output output.xlsx
 
 OR with CLI args (benchmark text paste fallback):
-  python3 committee_template_generator.py --name "Lastname, Firstname" \
+  python3 fmv_workbook_generator.py --name "Lastname, Firstname" \
     --salary-file annual_salary_increases.xlsx \
     --benchmarks benchmarks.txt \
-    --template committee_template.xlsx \
+    --template fmv_template.xlsx \
     --proposed-base 319150.00 --stipend 42000 --wrvu 4228 \
     --no-academic-rank --output output.xlsx
 
@@ -320,7 +320,7 @@ def parse_benchmarks(benchmark_text):
 def fill_template(template_path, output_path, data,
                   sheet1_name=SHEET1_NAME, sheet2_name=SHEET2_NAME,
                   benefits_rate=BENEFITS_RATE):
-    """Fill the committee Excel template with provider data. Preserves all formulas.
+    """Fill the FMV review workbook with provider data. Preserves all formulas.
 
     NOTE: Cell mappings below assume a common two-sheet committee template layout.
     Different organizations use different cell positions. If your template uses
@@ -542,7 +542,7 @@ def main():
     parser.add_argument('--salary-file', default='annual_salary_increases.xlsx')
     parser.add_argument('--survey-file', help='Survey Combined Excel file (auto-lookup benchmarks by specialty)')
     parser.add_argument('--benchmarks', help='Benchmark survey text file (fallback if no --survey-file)')
-    parser.add_argument('--template', default='committee_template.xlsx')
+    parser.add_argument('--template', default='fmv_template.xlsx')
     parser.add_argument('--proposed-base', type=float)
     parser.add_argument('--stipend', type=float, default=0)
     parser.add_argument('--current-stipend', type=float, default=0)

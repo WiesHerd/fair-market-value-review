@@ -49,9 +49,9 @@ except ImportError:
     print("ERROR: matplotlib required. Install: pip install matplotlib", file=sys.stderr)
     sys.exit(1)
 
-# Import shared functions from committee_template_generator
+# Import shared functions from fmv_workbook_generator
 sys.path.insert(0, str(Path(__file__).parent))
-from committee_template_generator import (
+from fmv_workbook_generator import (
     resolve_dec,
     lookup_benchmarks_from_survey,
     parse_benchmarks,

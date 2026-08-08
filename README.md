@@ -111,11 +111,11 @@ salary, survey, and template files in the expected formats:
 pip install -r requirements.txt
 
 # Committee Excel template fill (both sheets, formulas preserved + verified)
-python3 scripts/committee_template_generator.py \
+python3 scripts/fmv_workbook_generator.py \
   --name "Provider 1" \
   --salary-file examples/example_salary_file.xlsx \
   --survey-file examples/example_survey_combined.xlsx \
-  --template examples/example_committee_template.xlsx \
+  --template examples/example_fmv_template.xlsx \
   --proposed-base 325000 --stipend 42000 --wrvu 4228 --track-num 100026 \
   --no-academic-rank --output committee_request.xlsx
 
@@ -145,7 +145,7 @@ cp templates/request_config.json my_request.json
 vim my_request.json
 
 # 3. Run
-python3 scripts/committee_template_generator.py --config my_request.json --output output.xlsx
+python3 scripts/fmv_workbook_generator.py --config my_request.json --output output.xlsx
 ```
 
 ### Standard Report (DOCX + PDF)
@@ -175,14 +175,14 @@ comp-adjustment-request/
 ├── WALKTHROUGH.md                              # Real-world analyst scenario, start to finish
 ├── requirements.txt                            # Dependencies (weasyprint optional, for HTML->PDF)
 ├── scripts/
-│   ├── committee_template_generator.py         # Excel template fill (30-second workflow)
+│   ├── fmv_workbook_generator.py         # Excel template fill (30-second workflow)
 │   ├── build_adjustment_report.py              # DOCX/PDF report + exhibit
 │   ├── build_cv_only_market_anchor.py          # CV-only market anchor mode
 │   ├── build_html_email.py                     # Email-ready HTML report (+ 0.6" margin PDF)
 │   ├── docx_style_helpers.py                   # Shared DOCX styling (shaded headers, banded rows, footers)
 │   └── generate_example_xlsx_fixtures.py       # Regenerates examples/*.xlsx from scratch
 ├── examples/                                   # Fictional data -- every Quick Start command runs on these
-│   ├── example_salary_file.xlsx / example_survey_combined.xlsx / example_committee_template.xlsx
+│   ├── example_salary_file.xlsx / example_survey_combined.xlsx / example_fmv_template.xlsx
 │   ├── example_cohort.tsv / example_anchors.json / example_config.json
 │   └── README.md
 ├── docs/screenshots/                           # Real rendered output shown in this README
@@ -190,7 +190,7 @@ comp-adjustment-request/
 ├── templates/
 │   └── request_config.json                     # JSON config template
 └── references/
-    ├── committee-excel-template.md              # Cell mapping & formula reference
+    ├── fmv-workbook-cell-map.md              # Cell mapping & formula reference
     ├── survey-combined-file-structure.md        # Survey file layout & dash pitfall
     ├── cv-only-market-anchor.md                 # CV-only workflow notes
     └── example-review.md              # Worked example with language patterns
@@ -252,5 +252,5 @@ MIT — see [LICENSE](LICENSE).
 ## Contributing
 
 Pull requests welcome. If your organization uses a different Excel template layout,
-the cell mappings in `committee_template_generator.py` are configurable via constants
+the cell mappings in `fmv_workbook_generator.py` are configurable via constants
 at the top of the file.

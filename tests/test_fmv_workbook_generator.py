@@ -1,12 +1,12 @@
 """
-Unit tests for scripts/committee_template_generator.py.
+Unit tests for scripts/fmv_workbook_generator.py.
 
 Exercises:
   - resolve_dec()       — .dec extension handling
   - lookup_provider()   — provider lookup in mock salary workbook
   - lookup_benchmarks_from_survey() — survey lookup w/ dash normalization
   - parse_benchmarks()  — benchmark text-paste parser
-  - fill_template()     — committee Excel template filler (writes valid output)
+  - fill_template()     — FMV review workbook filler (writes valid output)
 
 All Excel inputs are built in tests/fixtures/builders.py so the suite has no
 dependency on real employer files.
@@ -19,7 +19,7 @@ from pathlib import Path
 import openpyxl
 import pytest
 
-from committee_template_generator import (
+from fmv_workbook_generator import (
     BENEFITS_RATE,
     SALARY_SHEET_NAME,
     SHEET1_NAME,

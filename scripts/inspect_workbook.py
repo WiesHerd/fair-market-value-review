@@ -123,7 +123,7 @@ def main():
     wb.close()
     print("Read-only: nothing in your workbook was modified.")
     print("Next: confirm the mapping, then set the sheet-name constants at the top of")
-    print("scripts/committee_template_generator.py (or tell the agent the correct columns).\n")
+    print("scripts/fmv_workbook_generator.py (or tell the agent the correct columns).\n")
 
 
 if __name__ == '__main__':

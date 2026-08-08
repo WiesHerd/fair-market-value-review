@@ -11,7 +11,7 @@ Fictional data for trying the skill's scripts. All names are invented.
 | `example_config.json` | Config file pointing at the example data (for `build_adjustment_report.py --config`) |
 | `example_salary_file.xlsx` | Fake "Annual Salary Increases" workbook (3 providers) -- for the committee template generator |
 | `example_survey_combined.xlsx` | Fake "Survey Combined" workbook (2 specialties, blended TCC/wRVU by Survey 1/Survey 3/Survey 2) |
-| `example_committee_template.xlsx` | Fake committee Excel template with formulas intact |
+| `example_fmv_template.xlsx` | Fake FMV review workbook with formulas intact |
 
 Regenerate the xlsx fixtures anytime with `python3 scripts/generate_example_xlsx_fixtures.py`.
 
@@ -41,19 +41,19 @@ python scripts/build_cv_only_market_anchor.py \
   --output-dir ./examples/cv_anchor_out
 
 # Committee Excel template fill (fills both sheets, all formulas preserved)
-python scripts/committee_template_generator.py \
+python scripts/fmv_workbook_generator.py \
   --name "Provider 1" \
   --salary-file examples/example_salary_file.xlsx \
   --survey-file examples/example_survey_combined.xlsx \
-  --template examples/example_committee_template.xlsx \
+  --template examples/example_fmv_template.xlsx \
   --proposed-base 325000 --stipend 42000 --wrvu 4228 --track-num 100026 \
   --no-academic-rank --output examples/committee_request_output.xlsx
 ```
 
-## Committee Excel Template
+## FMV Review Workbook
 
 The committee template generator requires a salary workbook and survey workbook in a specific format.
 `example_salary_file.xlsx` and `example_survey_combined.xlsx` above follow that format and can be used
-directly (see the command above). See `references/committee-excel-template.md` and
+directly (see the command above). See `references/fmv-workbook-cell-map.md` and
 `references/survey-combined-file-structure.md` for the expected column layouts if you need to adapt this
 to your organization's actual files.

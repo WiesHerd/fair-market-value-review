@@ -88,7 +88,7 @@ The most common failure is assuming someone else's spreadsheet layout. Never gue
 3. Show the detected sheet names, columns and sample rows. Ask them to confirm or correct
    — especially name, specialty, FTE, current salary and the percentile columns.
 4. Record the confirmed mapping (sheet-name constants at the top of
-   `scripts/committee_template_generator.py`, or carry it in the session).
+   `scripts/fmv_workbook_generator.py`, or carry it in the session).
 5. Confirm the **benefits/fringe rate** by reading their template's own formula. Never assume.
 
 Once mapped, the user never repeats this step.
@@ -206,7 +206,7 @@ end without being asked.
 
 **Fill the review workbook:**
 ```bash
-python3 scripts/committee_template_generator.py \
+python3 scripts/fmv_workbook_generator.py \
   --name "Provider Name" --salary-file roster.xlsx --survey-file survey.xlsx \
   --template fmv_review_template.xlsx \
   --proposed-base 325000 --stipend 42000 --wrvu 4228 --track-num 100026 \
@@ -316,7 +316,7 @@ exhibit over long narrative.
   recompute in Python. Never trust an unevaluated cell.
 
 ## Files
-- `scripts/committee_template_generator.py` — workbook fill (lookup, blending, verification)
+- `scripts/fmv_workbook_generator.py` — workbook fill (lookup, blending, verification)
 - `scripts/fmv_analysis.py` — market-approach analytics: positioning, comp-per-wRVU,
   alignment flags, caveat set
 - `scripts/fmv_register.py` — request register (add / update / list / summary)

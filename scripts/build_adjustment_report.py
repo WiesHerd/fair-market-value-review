@@ -209,7 +209,7 @@ def build_report(providers, anchors, exhibit_path, output_docx, metadata=None):
     else:
         doc.add_paragraph('Annual Salary Increases file (authoritative for current base, TCC percentile, wRVU percentile).')
         doc.add_paragraph('Survey Combined file (aggregated survey data by specialty).')
-        doc.add_paragraph('Committee Request Form template (output deliverable).')
+        doc.add_paragraph('FMV review workbook (output deliverable).')
 
     p = doc.add_paragraph()
     p.add_run(f"Snapshot date: {meta.get('snapshot_date', datetime.now().strftime('%Y-%m-%d'))}").italic = True
@@ -430,7 +430,7 @@ def main():
 
     # Build report
     # NOTE: build_report() only renders these specific metadata keys (it has no
-    # "Request Summary" / "Background" section -- that's a committee_template_generator.py
+    # "Request Summary" / "Background" section -- that's a fmv_workbook_generator.py
     # concept). Config fields like request_summary/general_background/physician_background
     # are accepted for compatibility with a shared config file but are not rendered here.
     #

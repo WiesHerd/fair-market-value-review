@@ -31,7 +31,7 @@ FX_DIR = Path(__file__).resolve().parents[1] / "tests" / "fixtures"
 def main() -> None:
     build_mock_salary_xlsx(FX_DIR / "mock_salary.xlsx")
     build_mock_survey_xlsx(FX_DIR / "mock_survey.xlsx")
-    build_mock_committee_template_xlsx(FX_DIR / "mock_committee_template.xlsx")
+    build_mock_committee_template_xlsx(FX_DIR / "mock_fmv_template.xlsx")
     for p in sorted(FX_DIR.glob("mock_*.xlsx")):
         print(f"{p.name}: {p.stat().st_size} bytes")
 

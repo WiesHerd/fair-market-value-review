@@ -2,7 +2,7 @@
   "name": "Provider 1",
   "salary_file": "annual_salary_increases.xlsx",
   "survey_file": "survey_combined.xlsx",
-  "template": "committee_template.xlsx",
+  "template": "fmv_template.xlsx",
   "proposed_base": 325000.00,
   "stipend": 42000,
   "current_stipend": 0,

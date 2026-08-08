@@ -1,7 +1,7 @@
 """
 Validate templates/request_config.json.
 
-The committed request config drives committee_template_generator.py at runtime,
+The committed request config drives fmv_workbook_generator.py at runtime,
 so its shape must remain stable. Required fields, sensible types, and the
 non-trivial invariants that downstream code depends on.
 """

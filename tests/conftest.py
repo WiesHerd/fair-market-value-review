@@ -102,7 +102,7 @@ def checked_in_survey_xlsx(fixtures_dir: Path) -> Path:
 @pytest.fixture(scope="session")
 def checked_in_template_xlsx(fixtures_dir: Path) -> Path:
     """Versioned mock committee template shipped in tests/fixtures/."""
-    return fixtures_dir / "mock_committee_template.xlsx"
+    return fixtures_dir / "mock_fmv_template.xlsx"
 
 
 # ─── JSON config fixture ──────────────────────────────────────────────

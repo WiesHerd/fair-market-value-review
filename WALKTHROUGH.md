@@ -25,7 +25,7 @@ You have three source files on your drive (the fictional stand-ins live in `exam
 |---|---|
 | Annual Salary Increases workbook (post-increase salaries, TCC/wRVU percentiles) | `examples/example_salary_file.xlsx` |
 | Survey Combined workbook (Survey 1 + Survey 3 + Survey 2 by specialty) | `examples/example_survey_combined.xlsx` |
-| Committee request form template (two sheets: Request Form + Tracker) | `examples/example_committee_template.xlsx` |
+| Committee request form template (two sheets: Request Form + Tracker) | `examples/example_fmv_template.xlsx` |
 
 ---
 
@@ -96,11 +96,11 @@ survey file per specialty, weighted-average math, percentile interpolation,
 tracker cross-references. One command instead:
 
 ```bash
-python3 scripts/committee_template_generator.py \
+python3 scripts/fmv_workbook_generator.py \
   --name "Provider 1" \
   --salary-file examples/example_salary_file.xlsx \
   --survey-file examples/example_survey_combined.xlsx \
-  --template examples/example_committee_template.xlsx \
+  --template examples/example_fmv_template.xlsx \
   --proposed-base 325000 --stipend 42000 --wrvu 4228 --track-num 100026 \
   --no-academic-rank --output committee_request.xlsx
 ```
@@ -130,11 +130,11 @@ form — all numerically consistent because they draw from the same source files
 The example files mirror a common layout, but every org's files differ. Adjust:
 
 - **Sheet names / column letters** — constants at the top of
-  `committee_template_generator.py` (`SALARY_SHEET_NAME`, `SURVEY_SHEET_NAME`,
+  `fmv_workbook_generator.py` (`SALARY_SHEET_NAME`, `SURVEY_SHEET_NAME`,
   column mappings documented in `references/`)
 - **Benefits rate** — read from your template's formula, or set `BENEFITS_RATE`
 - **Cell positions in your committee template** — mappings in `fill_template()`,
-  documented cell-by-cell in `references/committee-excel-template.md`
+  documented cell-by-cell in `references/fmv-workbook-cell-map.md`
 
 Run `python3 -m pytest tests/ -v` after any adaptation — 87+ tests cover the
 lookup, blending, interpolation, parsing, and fill logic.

@@ -15,7 +15,7 @@ Run:
 Produces (in examples/):
     example_salary_file.xlsx      - fake "Annual Salary Increases" file (3 providers)
     example_survey_combined.xlsx  - fake "Survey Combined" file (2 specialties)
-    example_committee_template.xlsx - fake committee Excel template (formulas intact)
+    example_fmv_template.xlsx - fake FMV review workbook (formulas intact)
 """
 import openpyxl
 from pathlib import Path
@@ -246,7 +246,7 @@ ws2["AD6"] = "=SUM(AA6:AC6)"; ws2["AE6"] = f"=AD6*{BENEFITS_RATE}"
 for a, b in [("AF6","AA6-Q6"),("AG6","AB6-R6"),("AH6","AC6-S6"),("AI6","AD6-T6"),("AJ6","AE6-U6")]:
     ws2[a] = f"={b}"
 
-wb.save(OUT / "example_committee_template.xlsx")
+wb.save(OUT / "example_fmv_template.xlsx")
 print("Example fixtures written to", OUT)
 for f in sorted(OUT.glob("*.xlsx")):
     print(" -", f.name)
